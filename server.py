@@ -48,7 +48,7 @@ def write_to_csv(data):  # csv stands for comma separated value ( to write our d
 
       
 
-@app.route('/submit_form', methods=['POST', 'GET']) 
+@app.route('/submit_form', methods=['POST', 'GET']) # POST will send specified POST request to url , GET will return the value of item with specified key
 def submit_form():
 	if request.method == 'POST':
 		data = request.form.to_dict()

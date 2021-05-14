@@ -39,7 +39,7 @@ def write_to_file(data): #function for write in a database.txt file
 
 
 def write_to_csv(data):  # csv stands for comma separated value ( to write our database in standardize way)
-	with open('database.csv', mode='a') as database2:
+	with open('database.csv', mode='a') as database2: # mode ='a' open the text file for appending text
 	  email = data ["email"]
 	  subject = data ["subject"]
 	  message = data ["message"]
